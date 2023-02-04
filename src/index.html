@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Configurator</title>
+</head>
+<body>
+    <canvas class="webgl"></canvas> 
+    <div class="loading-bar"></div>
+    <div class="menu">
+        <button id="editButton">
+            <p id="editBtnText">Configure</p>
+            <img id="wrench" src="/static/icons/wrench.png" alt="">
+        </button>
+    </div>
+    <div id="outlineToggle">
+        <p>Show outline</p>
+        <label class="switch">
+            <input id='outlineSwitch' type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div id="sideMenu">
+        <div id="sideMenuHeader">        
+            <h1>Options</h1>
+            <button id="closeButton">X</button>
+        </div>
+        <div id="componentTypeHeader">
+            <button id="backBtn"><img src="/static/icons/arrow icon.png" alt=""></button>
+            <h2 id="componentTypeName"></h2>
+        </div>
+        <div id="options"></div>
+        <div id="secondaryOption">
+            <!-- <h2 id="secondaryOptionHeader">Same color as body</h2> -->
+            <!-- <input id="secondaryOptionCheckBox" type="checkbox"> -->
+        </div>
+        <div id="stripes">
+            <div id="stripesHeaderContainer">
+                <h2 id="stripesHeader">Racing Stripes</h2>
+                <input id='stripesCheckBox' type="checkbox" checked>    
+            </div>
+            <div id="stripesOptions">
+                <button id="whiteStripe"></button>
+                <button id="blackStripe"></button>
+                <button id="blueStripe"></button>
+                <button id="redStripe"></button>
+                <button id="yellowStripe"></button>
+            </div>
+        </div>
+        <button id="confirmButton">Confirm Changes</button>
+    </div>
+</body>
+</html>
